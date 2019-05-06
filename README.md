@@ -17,7 +17,7 @@ app.listen(3000, function () {
 ```
 > package.json:
 
-```JavaScript
+```Node.js
 {
   "name": "node_block",
   "version": "1.0.0",
@@ -39,3 +39,7 @@ app.listen(3000, function () {
 }
 ```
 > Ввести в консоли  ```npm run dev``` и перейти по http://localhost:3000/
+
+## 2. Работа с POST/GET запросами в Express
+
+
