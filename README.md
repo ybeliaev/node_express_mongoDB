@@ -45,5 +45,28 @@ app.listen(3000, function () {
 > подкл. шаблонизатор https://ejs.co/
 ```npm install ejs```
 > Далее добавляю ```app.set('view engine', 'ejs');``` в index.js  - подкл. шаблонизатор и создаю папку ```views``` т.к в ней по-умолчанию шаблонизатор ищет файлы. В ней файл index.ejs.
-> ```.res.send('Hello World!')``` меняем на ```res.render(index)```
+> ```.res.send('Hello World!')``` меняем на ```res.render('index')```
+
+### дока на работу шаблонизатора с Express 
+https://github.com/mde/ejs/wiki/Using-EJS-with-Express
+### передача данных в res.render('index') вторым аргументом:
+```node.js
+const express = require('express');
+const app = express();
+
+const data = 'It is data string'
+
+app.set('view engine', 'ejs');
+
+app.get('/',  (req, res) => res.render('index', {data: data})); 
+
+
+app.listen(3000,  () => console.log('Example app listening on port 3000!'));  
+```
+> а в index.ejs:
+```html
+<body>
+    <%= data %>
+</body>
+```
 
