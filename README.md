@@ -44,5 +44,6 @@ app.listen(3000, function () {
 
 > подкл. шаблонизатор https://ejs.co/
 ```npm install ejs```
-Далее добавляю ```app.set('view engine', 'ejs');``` в index.js  - подкл. шаблонизатор и создаю папку ```view``` т.к в ней по-умолчанию шаблонизатор ищет файлы
+> Далее добавляю ```app.set('view engine', 'ejs');``` в index.js  - подкл. шаблонизатор и создаю папку ```views``` т.к в ней по-умолчанию шаблонизатор ищет файлы. В ней файл index.ejs.
+> ```.res.send('Hello World!')``` меняем на ```res.render(index)```
 
