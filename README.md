@@ -42,4 +42,7 @@ app.listen(3000, function () {
 
 ## 2. Работа с POST/GET запросами в Express
 
+> подкл. шаблонизатор https://ejs.co/
+```npm install ejs```
+Далее добавляю ```app.set('view engine', 'ejs');``` в index.js  - подкл. шаблонизатор и создаю папку ```view``` т.к в ней по-умолчанию шаблонизатор ищет файлы
 
