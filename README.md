@@ -1,5 +1,6 @@
 # Создание сайта на Node.js, Express, MongoDB
 
+## 1. Настраиваем окружение
 > подключаю Express https://expressjs.com/ru/starter/installing.html
 
 ```JavaScript
