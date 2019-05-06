@@ -38,3 +38,4 @@ app.listen(3000, function () {
   }
 }
 ```
+> Ввести в консоли  ```npm run dev``` и перейти по http://localhost:3000/
